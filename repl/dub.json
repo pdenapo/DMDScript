@@ -1,0 +1,17 @@
+{
+	"authors": [
+		"Pablo De Napoli"
+	],
+	"copyright": "Copyright © 2020, Pablo De Napoli",
+	"dependencies": {},
+	"description": "Read Eval Print Loop for dmscript",
+	"license": "BSD",
+	"targetType": "executable",
+	"name": "repl",
+	"preBuildCommands": [
+		"echo \"Compiling linenoise\"; cd ./C; [ -f linenoise.o ] || cc -shared -fPIC -o linenoise.o linenoise.c; echo \"Done.\""
+	],
+	"lflags": [
+		"./C/linenoise.o"
+	]
+}

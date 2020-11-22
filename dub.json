@@ -11,7 +11,7 @@
 
     "targetType": "none",
     "subPackages" : [
-       "./ds", "./ds-ext", "./engine"
+       "./ds", "./ds-ext", "./engine", "./repl"
     ],
     "license": "BSL-1.0",
 }
